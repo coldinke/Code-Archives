@@ -6,27 +6,27 @@ The contents of this repository are organized into classes based on the type of 
 ## Contents
 > 
 ### 1. Recursion
-output the number like this:
-```bash
-486
-48
-4
-48
-486
-```
-Code: 
+1. Print out a cascading tree of a positive integer `n`.
+    ```bash
+    486
+    48
+    4
+    48
+    486
+    ```
+Code:
 ```rust
-fn cascade(n: u32) {
-    if n < 10 {
-        println!("{n}");
-    } else {
-        println!("{n}");
-        sum_digits(n / 10);
-        println!("{n}");
+    fn cascade(n: u32) {
+        if n < 10 {
+            println!("{n}");
+        } else {
+            println!("{n}");
+            sum_digits(n / 10);
+            println!("{n}");
+        }
     }
-}
 
-fn main() {
-    cascade(486);
-}
+    fn main() {
+        cascade(486);
+    }
 ```
