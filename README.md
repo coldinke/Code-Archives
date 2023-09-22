@@ -67,3 +67,9 @@ fn main() {
     println!("res: {res}");
 }
 ```
+
+3. Computer System
+
+YEMU: A Simple CPU simulator
+
+./C/yemu.c
